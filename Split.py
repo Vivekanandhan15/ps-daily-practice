@@ -10,7 +10,7 @@ def split_on_hyphen(sentence):
 
 # Without using split()
 
-def split_on_hyphen(sentence):
+def split_on_hyphen_manual(sentence):
 
     temp = ""
     for char in sentence:
