@@ -1,11 +1,17 @@
-str1 = "Python"
-print(str1[::-1])
 
-# Without slicing or inbuilt reverse functions
+def reverse_string_inbuilt(s):
+    print(s[::-1])
 
-str1 = "Python"
-reversed_str = ""
-for ch in str1:
-    reversed_str = ch + reversed_str
-print(reversed_str)
+# Reverse string without using slicing
 
+def reverse_string(s):
+   
+    reversed_str = ""
+    for ch in s:
+        reversed_str = ch + reversed_str
+    print(reversed_str)
+
+s = input("Enter a string :") 
+
+reverse_string_inbuilt(s)
+reverse_string(s)

@@ -1,20 +1,26 @@
-sentence = "Emma-is-a-data-scientist"
+
 
 # Using inbuilt split()
 
-words = sentence.split("-")
-for word in words:
-    print(word)
+def split_on_hyphen(sentence):
+    
+    words = sentence.split("-")
+    for word in words:
+        print(word)
 
 # Without using split()
 
-sentence = "Emma-is-a-data-scientist"
+def split_on_hyphen(sentence):
 
-temp = ""
-for char in sentence:
-    if char != "-":
-        temp += char
-    else:
-        print(temp)
-        temp = ""
-print(temp)
+    temp = ""
+    for char in sentence:
+        if char != "-":
+            temp += char
+        else:
+            print(temp)
+            temp = ""
+    print(temp) 
+
+sentence = "Emma-is-a-data-scientist"    
+split_on_hyphen(sentence)
+split_on_hyphen(sentence)
